@@ -15,6 +15,7 @@ return [
 
     'failed' => 'Invalid Username or Password',
     'notverified' => 'Your Email Is Not Verified',
+    'registered' => 'Registered Successfully',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];

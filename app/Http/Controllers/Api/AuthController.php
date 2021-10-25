@@ -16,8 +16,6 @@ class AuthController extends Controller
         $email = $request->input('email');
         $password = $request->password;
 
-        $fieldType = filter_var($username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-
         $credentials = [
             'email' => $email,
             'password' => $password,
@@ -41,7 +39,6 @@ class AuthController extends Controller
         // }
 
         } else {
-
             return response()->error(__('auth.failed'));
         }
 

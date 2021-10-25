@@ -24,7 +24,7 @@ Route::post('signup', 'AuthController@signup');
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
-    Route::post('user/updatedetails', 'AuthController@UpdateUserDetails');
+Route::post('user/updatedetails', 'AuthController@UpdateUserDetails');
 
 });
 
